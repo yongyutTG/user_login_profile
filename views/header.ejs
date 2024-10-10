@@ -1,0 +1,79 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>coderszine.com - User Authentication with Node.js, Express and MySQL</title>
+	<link rel="icon" type="image/png" href="https://coderszine.com/wp-content/themes/v2/cz.png">
+     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="public/css/signin.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="public/css/home.css">
+    
+    <link href="public/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="public/fontawesome-free-6.2.1-web/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link href="public/css/carousel.css" rel="stylesheet">
+    <style>
+        /* กำหนดสีพื้นหลังและขอบการ์ด */
+        .card-custom {
+            background-color: #f0f8ff; /* สีฟ้าอ่อน */
+            border: 2px solid #aeb0b3; /* ขอบสีฟ้าเข้ม */
+            border-radius: 10px;
+        }
+        .card-title {
+            color: #007bff; /* สีน้ำเงิน */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a href="#" class="navbar-brand"><i class="fa fa-cube"></i>ยินดีต้อนรับคุณ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <form action="/search" method="GET" class="navbar-form form-inline">
+              <div class="input-group search-box">
+                  <input type="text" id="search" name="query" class="form-control" placeholder="Search employee by ID or Name..." required>
+                  <button type="submit" class="btn btn-primary ml-2">Search</button>
+              </div>
+            </form>
+            <div class="navbar-nav ml-auto">
+                <!-- Other navbar items -->
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link active"><i class="fa fa-home"></i><span>หน้าหลัก</span></a>
+                <a href="#" class="nav-item nav-link"><i class="fa fa-gears"></i><span>โครงการ</span></a>
+                <a href="/users" class="nav-item nav-link"><i class="fa fa-users"></i><span>เจ้าหน้าที่ทั้งหมด</span></a>
+                <a href="#" class="nav-item nav-link"><i class="fa fa-pie-chart"></i><span>รายงาน</span></a>
+                <a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>ข้อความ</span></a>
+                <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>แจ้งเตือน</span></a>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-item nav-link -toggle user-action">
+                        <img  src="public/images/profile2.jpg" class="avatar" alt="Avatar">
+                        <b class="caret"></b>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="/logout">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+  
+
+      

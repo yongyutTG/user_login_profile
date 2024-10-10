@@ -1,0 +1,34 @@
+<%- include('header'); -%>
+<%- include('container'); -%>
+<div class="row">
+    <div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <span>Logged In: <%=data[0].username%></span>		  
+		  <span class="pull-right"><a href="/home/logout">Logout</a></span>		  
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3"> <img alt="User Pic" src="/images/user.jpg" class="img-circle img-responsive"> </div>
+            <div class=" col-md-9 col-lg-9 "> 
+              <table class="table table-user-information">
+                <tbody>
+				  <tr>
+                    <td>Name:</td>
+                    <td><%=data[0].first_name%> <%=data[0].last_name%></td>
+                  </tr>
+                  <tr>
+                    <td>User Name:</td>
+                    <td><%=data[0].username%></td>
+                  </tr>
+                  <tr>
+                    <td>Mobile:</td>
+                    <td><%=data[0].mobile%></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+	<%- include('footer'); -%>

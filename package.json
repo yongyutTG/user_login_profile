@@ -1,0 +1,23 @@
+{
+  "name": "user_authentication_nodejs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.0.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mysql": "^2.18.1",
+    "req-flash": "^0.0.3"
+  },
+  "description": ""
+}
